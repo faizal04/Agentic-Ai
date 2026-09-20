@@ -1,0 +1,1 @@
+the email generated is not professional, so Guardrail stopped it. "

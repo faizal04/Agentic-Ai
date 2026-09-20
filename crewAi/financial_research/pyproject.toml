@@ -1,0 +1,25 @@
+[project]
+name = "financial_research"
+version = "0.1.0"
+description = "financial_research using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[litellm,tools]>=1.15.18,<2.0.0",
+]
+
+[project.scripts]
+financial_research = "financial_research.main:run"
+run_crew = "financial_research.main:run"
+train = "financial_research.main:train"
+replay = "financial_research.main:replay"
+test = "financial_research.main:test"
+run_with_trigger = "financial_research.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+project_id = "96a6caf9-62cb-45b5-a6a1-645a14546929"
