@@ -1,0 +1,1 @@
+ind_tools([get_share_pric
